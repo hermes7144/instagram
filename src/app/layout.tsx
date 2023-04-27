@@ -1,5 +1,4 @@
 import AuthContext from '@/context/AuthContext';
-import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import './globals.css';
 import { Open_Sans } from 'next/font/google';
@@ -20,7 +19,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Navbar />
           </header>
           <main className='grow'> {children}</main>
-          <Footer />
         </AuthContext>
       </body>
     </html>
